@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="XiangAlvaroLuciano">
+        <meta name="description" content="ExpoF1">
+        <meta name="keywords" content="ExpoF1">
+        <link href="css/stylestickets.css" rel="stylesheet" type="text/css">
+        <link href="img/favicon.png" rel="icon" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Exposición F1 </title> 
+    </head>
+
+    <body>
+        <header>
+            <div class="left">
+                <img src="img/logo_ifema.png" alt="IFEMA">
+                <img src="img/logo_f1.png" alt="F1">
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <h1>Comprar Tickets</h1>
+                <h2>Exposición Formula1 - IFEMA</h2>
+                <form onsubmit="return comprar()">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Nombre" required>
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" placeholder="Correo electrónico" required>
+                    <label for="exposicion">Exposición:</label>
+                    <select id="exposicion">
+                        <option value="e">Formula1</option>
+                    </select>
+                    <label for="numero">Número de entradas:</label>
+                    <input type="number" id="numero" min="1" max="6" placeholder="Número de entradas" onchange="costeTotal()" required>
+                    <p>Coste de las entradas: <span id="coste"></span></p>
+                    <input type="submit" value="Comprar entradas">
+                </form>
+
+                <form action="index.html">
+                    <input id="back" type="submit" value="Volver atras">
+                </form>
+            </section>
+        
+            <div id="modal">
+                <div>
+                    <h2>La compra se ha realizado correctamente</h2>
+                    <p>Exposición seleccionada:</p>
+                    <ul>
+                        <li>Nombre:<strong> <span id="n"></span></strong></li>
+                        <li>Correo electrónico: <strong><span id="c"></span></strong></li>
+                        <li>Exposición: <strong><span id="e"></span></strong></li>
+                        <li>Número de entradas: <strong><span id="nu"></span></strong></li>
+                        <li>Coste total: <strong><span id="ct"></span></strong></li>
+                    </ul>
+                    <button onclick="cerrarVentana()">Aceptar</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div>
+                <img src="img/logo_f1.png" alt="F1">
+                <p>Aviso Legal</p>
+                <p>Política de Privacidad</p>
+                <p>Condiciones de uso</p>
+                <p>Política de cookies</p>
+                <p>Accesibilidad</p>
+                <p>Configuración de cookies</p>
+            </div>
+            <div class="org">
+                <p>Organiza:</p>
+                <img src="img/colaborador1.png" alt="mercedes">
+                <img src="img/colaborador2.svg" alt="mclaren"> 
+                <img src="img/colaborador3.svg" alt="lista"> 
+            </div>
+        </footer>
+
+        <script src="js/scriptcompra.js"></script>
+    </body>
+</html>

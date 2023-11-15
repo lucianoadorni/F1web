@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="XiangAlvaroLuciano">
+        <meta name="description" content="ExpoF1">
+        <meta name="keywords" content="ExpoF1">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <link href="img/favicon.png" rel="icon" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Exposición F1 </title> 
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+                <i class="fa-solid fa-cookie-bite"></i>
+                <h2>Consentimientos de cookies</h2>
+            </header>
+            <div class="data">
+                <p>Este sitio web utiliza cookies para ayudarle a tener una experiencia de navegación superior y más relevante en el sitio web. <a href=""> Leer más...</a></p>
+            </div>
+            <div class="buttons">
+                <button class="button" id="acceptBtn">Aceptar</button>
+                <button class="button" id="declineBtn">Rechazar</button>
+            </div>
+        </div>
+
+        <header>
+            <nav>
+                <div class="left">
+                    <a href=tickets.html target="_self"><i class="fa-solid fa-ticket"></i></a>
+                    <div id="icono" onclick="menu()">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <nav id="menu">
+                        <ul>
+                            <li>
+                                <a href="#short" onclick="closeMenu()">
+                                    Qué es FÓRMULA 1 La Exposición Madrid
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#slider" onclick="closeMenu()">
+                                    Imágenes
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contacto" onclick="closeMenu()">
+                                    Contacto
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tickets.html" onclick="closeMenu()">
+                                    Comprar entradas
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="right">
+                    <img src="img/logo_ifema.png" alt="IFEMA">
+                    <img src="img/logo_f1.png" alt="F1">
+                </div>
+            </nav>
+
+            <div id="video">
+                <video muted autoplay loop>
+                    <source src="vid/f1video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </header>
+
+        <main>
+            <div id="resumen">
+                <h1>El recinto ferial de IFEMA MADRID presenta</h1>
+                <p><b>del 24 de marzo al 4 de junio</b> la primera exhibición internacional en la historia de la F1 para vivir el pasado, presente y futuro de este deporte
+                    Una aventura impresionante a través del extraordinario mundo de la Fórmula 1. Seis salas donde admirar curiosidades, objetos míticos de todas las escuderías y hacer un recorrido de toda la historia de la Fórmula 1.
+                </p>
+            </div>
+
+            <div class="marquee">
+                <div class="marquee__inner" aria-hidden="true">
+                    <span>EXPOSICIÓN FÓRMULA 1</span>
+                    <span>EXPOSICIÓN FÓRMULA 1</span>
+                    <span>EXPOSICIÓN FÓRMULA 1</span>
+                    <span>EXPOSICIÓN FÓRMULA 1</span>
+                    <span>EXPOSICIÓN FÓRMULA 1</span>
+                </div>
+            </div>
+
+            <section id="descripcion">
+                <div class="divright">
+                    <h2 class="h2right">Vive experiencias que te transportarán al núcleo de una carrera actual.</h2>
+                    <figure><img class="imgright" src="img/1.jpg" alt="coche"></figure>
+                </div>
+                <div class="textorevez">
+                    <figure><img class="imgleft" src="img/2.jpg" alt="cocheF1"></figure>
+                    <h2 class="h2left">Muestras interactivas y educativas para todas las edades.</h2>
+                </div>
+                <div class="divright">
+                    <h2 class="h2right">Acceso exclusivo a archivos cinematográficos de la F1.</h2>
+                    <figure><img class="imgright" src="img/3.jpg" alt="Conductores"></figure>
+                </div>
+            </section>
+
+            <div class="marquee">
+                <div class="marquee__inner" aria-hidden="true">
+                    <span>EXPOSICIÓN FÓRMULA 1</span>
+                    <span>EXPOSICIÓN FÓRMULA 1</span>
+                    <span>EXPOSICIÓN FÓRMULA 1</span>
+                    <span>EXPOSICIÓN FÓRMULA 1</span>
+                    <span>EXPOSICIÓN FÓRMULA 1</span>
+                </div>
+            </div>
+
+            <div id="short">
+                <span class="juntos"><b>Qué es FÓRMULA 1 La Exposición Madrid</b>
+                    FÓRMULA 1 La Exposición es la primera exhibición internacional en la historia de la F1 que expone una de las historias más grandes del deporte a través de una experiencia innovadora, desde espectaculares contenidos audiovisuales hasta muestras exclusivas.
+                </span>
+                <p class="normal">Organizada por las figuras más importantes de este deporte, la exposición ofrece un relato único de su historia pasada, presente y futura.
+                    IFEMA MADRID se convierte en la sede de la primera exposición oficial de la Fórmula 1, en la que han colaborado tanto equipos legendarios, expertos y personas de renombre de este magnífico deporte. </p>
+            </div>
+            
+            <div id="slider">
+                <div class="slider-content">
+                  <img decoding="async" src="img/4.png" alt="image1"><noscript><img decoding="async" src="img/4.jpg" alt="image1"></noscript>
+                  <div class="slider-text">
+                    <h3>El Haas calcinado de Romain Grosjean</h3>
+                    <p>Aunque ya hace 3 años de ese aparatoso accidente, aún se conservan los restos del coche de Grosejan, que se partió por la mitad a gran velocidad y explotó al instante.</p>
+                  </div>
+                </div>
+                <div class="slider-content">
+                  <img decoding="async" src="img/5.jpg" alt="image2"><noscript><img decoding="async" src="img/5.jpg" alt="image2"></noscript>
+                  <div class="slider-text">
+                    <h3>El coche de la suerte de Gasly</h3>
+                    <p>También se muestra el AlphaTauri de Pierre Gasly con el que ganó Monza en un momento en el que su carrera estaba totalmente estancada.</p>
+                  </div>
+                </div>
+                <div class="slider-content">
+                  <img decoding="async" src="img/6.jpg" alt="image3"><noscript><img decoding="async" src="img/6.jpg" alt="image3"></noscript>
+                  <div class="slider-text">
+                    <h3>The Pitwall, una experiencia inmersiva</h3>
+                    <p>Antes de terminar la exposición, te espera una gran sala que ofrece una inmersión en una carrera. Aquí se muestran las telemetrías y demás indicadores que los técnicos monitorizan desde el box hasta las grandes victorias y momentos de tensión de las carreras más icónicas de la historia del deporte en un montaje frenético.</p>
+                  </div>
+                </div>
+              </div>
+
+            <form action="tickets.html">
+                <input id="comprarentradas" type="submit" value="COMPRA TUS ENTRADAS">
+            </form>
+
+            <section id="contacto">
+                <div>
+                    <h2>Contacto</h2>
+                    <b>+34 91 722 30 00</b>
+                    <p>Contacta con nosotros para resolver cualquier duda sobre la exposición y ventas de entradas.</p>
+                    <p> También encuentranos en nuestras redes.</p>
+                    <div class="redes">
+                        <a href="https://twitter.com/IFEMA" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/ifema_madrid/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="iframewrapper">
+                    <div class="h_iframe">
+                        <img class="ratio" src="http://placehold.it/16x9" alt="placeholder">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6070.672064054109!2d-3.626318722290049!3d40.46783039999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422e50d152df37%3A0x801ce4be7e7a5eec!2sIFEMA%20Madrid!5e0!3m2!1ses!2ses!4v1684943525021!5m2!1ses!2ses" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div>
+                <img src="img/logo_f1.png" alt="F1">
+                <p>Aviso Legal</p>
+                <p>Política de Privacidad</p>
+                <p>Condiciones de uso</p>
+                <p>Política de cookies</p>
+                <p>Accesibilidad</p>
+                <p>Configuración de cookies</p>
+            </div>
+            <div class="org">
+                <p>Organiza:</p>
+                <img src="img/colaborador1.png" alt="mercedes">
+                <img src="img/colaborador2.svg" alt="mclaren"> 
+                <img src="img/colaborador3.svg" alt="lista"> 
+            </div>
+        </footer>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
